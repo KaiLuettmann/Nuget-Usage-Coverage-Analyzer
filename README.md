@@ -95,7 +95,7 @@ dotnet run -- --solution <path\to.sln> --config <path\to\config.jsonc> [options]
 
 | Option                 | Short | Default                                                       | Description                                           |
 |------------------------|-------|---------------------------------------------------------------|-------------------------------------------------------|
-| `--coverage <file>`    | `-x`  | `<Repo>\test-results\coverage-report\all\Cobertura.xml`       | Path to the Cobertura XML coverage file               |
+| `--coverage <file>`    | `-x`  | `<Repo>\test-results\coverage-report\Cobertura.xml`       | Path to the Cobertura XML coverage file               |
 | `--output <file>`      | `-o`  | `<Repo>\NuGetUsageCoverageAnalyzer\nuget-coverage-output.txt` | Output file                                           |
 | `--verbose`            | `-v`  | `false`                                                       | Detailed diagnostics: DLL resolution, assembly map, counts |
 | `--include-transitive` | —     | `false`                                                       | Include transitive (indirect) dependencies            |
@@ -106,7 +106,7 @@ dotnet run -- --solution <path\to.sln> --config <path\to\config.jsonc> [options]
 dotnet run `
     -- --solution D:\dev\MyProject\MyProject.sln `
        --config D:\dev\MyProject\NuGetUsageCoverageAnalyzer\package-analysis-config.jsonc `
-       --coverage D:\dev\MyProject\test-results\coverage-report\all\Cobertura.xml
+       --coverage D:\dev\MyProject\test-results\coverage-report\Cobertura.xml
 ```
 
 Console output:
@@ -180,6 +180,6 @@ dotnet test --collect:"XPlat Code Coverage" --results-directory test-results
 
 dotnet tool run reportgenerator `
     -reports:"test-results\**\coverage.cobertura.xml" `
-    -targetdir:"test-results\coverage-report\all" `
+    -targetdir:"test-results\coverage-report" `
     -reporttypes:Cobertura
 ```
