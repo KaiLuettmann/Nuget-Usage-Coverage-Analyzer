@@ -6,9 +6,13 @@ den tatsächlichen API-Verwendungsstellen im Produktionscode via Roslyn-Semantic
 
 ## Voraussetzungen
 
-- .NET 8 SDK
+- .NET 10 SDK (zum Ausführen des Tools)
 - Die zu analysierende Solution muss vollständig wiederhergestellt sein (`dotnet restore`)
 - Eine Cobertura-XML-Coverage-Datei (z. B. erzeugt durch `dotnet test --collect:"XPlat Code Coverage"`)
+
+Unterstützte Zielframeworks der analysierten Solution: `net6.0`, `net7.0`, `net8.0`, `net9.0`,
+`net10.0` (jeweils auch `-windows`), `netstandard1.6`, `netstandard2.0`, `netstandard2.1`.
+Weitere TFMs werden als Fallback ebenfalls akzeptiert.
 
 ## Workflow
 
