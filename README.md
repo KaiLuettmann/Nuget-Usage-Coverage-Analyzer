@@ -167,9 +167,12 @@ count as production code.
 4. For umbrella packages (e.g. `Swashbuckle.AspNetCore`): the prefix fallback only applies when
    the package name is a prefix of the assembly name.
 
-**Coverage file not found**
+**Coverage file cannot be parsed**
 
-The tool continues without a coverage file — all usages are then reported as `NOT_INSTRUMENTED`.
+If the coverage file is missing or in an invalid format, the tool continues and treats all usage
+sites as not instrumented. Packages with usages will show status `NOT_INSTRUMENTED`; packages
+with no usages remain `NO_USAGES`.
+
 Generating coverage with ReportGenerator:
 
 ```powershell
