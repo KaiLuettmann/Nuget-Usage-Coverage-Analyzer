@@ -1,0 +1,33 @@
+﻿Solution : 
+{SolutionDirectory}tests\fixtures\SampleSolution\SampleSolutio
+n.sln
+Config   : 
+{SolutionDirectory}tests\fixtures\SampleSolution\package-analy
+sis-config.jsonc
+Output   : 
+{TempPath}nuget-analysis-PartialCoverage.txt
+
+[0/3] Auditing NuGet packages ...
+  Direct dependencies found   : 6
+  Skipped (test/build/internal): 5
+  To be analysed              : 1
+[1/3] Loading Cobertura coverage XML ...
+  Coverage files : 1
+[2/3] Scanning source files ...
+  Production .cs files: 1
+  Building Roslyn compilation ... OK
+  NuGet assemblies mapped     : 14
+  Packages in catalogue       : 1 (direct only)
+  Total API usages found: 8
+[3/3] Rendering output ...
+
+─────────────────────────────────── SUMMARY ────────────────────────────────────
+
+╭─────────────────┬────────┬───────────┬─────────┬───────────┬────────────────╮
+│ Package         │ Usages │ Coverable │ Covered │ Coverage% │ Status         │
+├─────────────────┼────────┼───────────┼─────────┼───────────┼────────────────┤
+│ Newtonsoft.Json │      8 │         5 │       3 │       60% │ MEDIUM_COVERED │
+╰─────────────────┴────────┴───────────┴─────────┴───────────┴────────────────╯
+
+Output written to: 
+{TempPath}nuget-analysis-PartialCoverage.txt

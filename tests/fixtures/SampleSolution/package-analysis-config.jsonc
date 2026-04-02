@@ -1,0 +1,12 @@
+{
+  "skipExact": [
+    "coverlet.msbuild",
+    "Microsoft.NET.Test.Sdk",
+    "SampleLib",
+    "xunit",
+    "xunit.runner.visualstudio"
+  ],
+  "skipPrefixes": ["runtime."],
+  "skipInternalPrefixes": [],
+  "sourceExcludePattern": "[\\\\/]SampleLib\\.Tests[\\\\/]"
+}

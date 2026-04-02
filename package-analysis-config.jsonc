@@ -1,0 +1,50 @@
+{
+  "skipExact": [
+    // Build tools & analyzers — no runtime API surface
+    "Meziantou.Analyzer",
+    "StrongNamer",
+    "JetBrains.Annotations",
+    "Microsoft.SourceLink.AzureDevOpsServer.Git",
+
+    // Test frameworks & assertion libraries
+    "xunit",
+    "xunit.v3",
+    "xunit.runner.visualstudio",
+    "NUnit3TestAdapter",
+    "NUnitTestAdapter",
+    "FluentAssertions",
+    "FluentAssertions.Json",
+    "NSubstitute",
+    "MockQueryable.NSubstitute",
+    "Moq",
+    "AutoFixture.AutoNSubstitute",
+    "AutoFixture.Idioms",
+    "AutoFixture.Xunit2",
+    "Reqnroll.xunit.v3",
+    "Allure.Reqnroll",
+    "Verify.Xunit",
+    "Verify.XunitV3",
+    "JunitXml.TestLogger",
+    "Microsoft.NET.Test.Sdk",
+
+    // Test infrastructure (ASP.NET hosting & EF design-time)
+    "Microsoft.Extensions.DiagnosticAdapter",
+    "Microsoft.AspNetCore.Mvc.Testing",
+    "Microsoft.AspNetCore.TestHost",
+    "Microsoft.EntityFrameworkCore.Design",
+
+    // BCL / runtime meta-packages — tied to SDK version, no owned API surface
+    "NETStandard.Library",
+    "System.ValueTuple",
+    "System.Reflection.Emit",
+    "System.Security.Cryptography.Algorithms",
+    "System.Security.Principal.Windows"
+  ],
+  "skipPrefixes": [
+    "runtime." // RID-specific runtime packs, e.g. runtime.win-x64.Microsoft.NETCore.App
+  ],
+  "skipInternalPrefixes": [
+    "MyCompany."
+  ],
+  "sourceExcludePattern": "\\\\(Test|AcceptanceTests|ApiTests|TestService|TestBase)\\\\|\\.Test(?:Base)?[\\\\.]"
+}

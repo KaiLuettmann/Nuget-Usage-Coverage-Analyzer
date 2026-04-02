@@ -1,0 +1,46 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31903.59
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NuGetUsageCoverageAnalyzer", "src\NuGetUsageCoverageAnalyzer\NuGetUsageCoverageAnalyzer.csproj", "{F178DCF8-A479-4800-B31F-516D8AF0CEC0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NuGetUsageCoverageAnalyzer.E2E.Tests", "tests\NuGetUsageCoverageAnalyzer.E2E.Tests\NuGetUsageCoverageAnalyzer.E2E.Tests.csproj", "{E4DCDCA7-B699-466D-899D-A24E6F09E3C5}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "E2E.TestFixtures", "E2E.TestFixtures", "{F0D838A4-71DB-42E7-BA29-CB751A90E927}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SampleLib", "tests\fixtures\SampleSolution\SampleLib\SampleLib.csproj", "{3AB3792F-8026-4C47-8831-7FE3E0B808BE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SampleLib.Tests", "tests\fixtures\SampleSolution\SampleLib.Tests\SampleLib.Tests.csproj", "{71FC6D7D-2331-48F5-9640-EA59AE851375}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F178DCF8-A479-4800-B31F-516D8AF0CEC0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F178DCF8-A479-4800-B31F-516D8AF0CEC0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F178DCF8-A479-4800-B31F-516D8AF0CEC0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F178DCF8-A479-4800-B31F-516D8AF0CEC0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E4DCDCA7-B699-466D-899D-A24E6F09E3C5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E4DCDCA7-B699-466D-899D-A24E6F09E3C5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E4DCDCA7-B699-466D-899D-A24E6F09E3C5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E4DCDCA7-B699-466D-899D-A24E6F09E3C5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3AB3792F-8026-4C47-8831-7FE3E0B808BE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3AB3792F-8026-4C47-8831-7FE3E0B808BE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3AB3792F-8026-4C47-8831-7FE3E0B808BE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3AB3792F-8026-4C47-8831-7FE3E0B808BE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{71FC6D7D-2331-48F5-9640-EA59AE851375}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{71FC6D7D-2331-48F5-9640-EA59AE851375}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{71FC6D7D-2331-48F5-9640-EA59AE851375}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{71FC6D7D-2331-48F5-9640-EA59AE851375}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{3AB3792F-8026-4C47-8831-7FE3E0B808BE} = {F0D838A4-71DB-42E7-BA29-CB751A90E927}
+		{71FC6D7D-2331-48F5-9640-EA59AE851375} = {F0D838A4-71DB-42E7-BA29-CB751A90E927}
+	EndGlobalSection
+EndGlobal
