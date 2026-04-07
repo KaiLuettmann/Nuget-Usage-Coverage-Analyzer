@@ -9,7 +9,7 @@
   <ItemGroup>
     <PackageReference Include="Microsoft.CodeAnalysis.CSharp" Version="4.14.0" />
     <PackageReference Include="NuGet.ProjectModel" Version="6.14.0" />
-    <PackageReference Include="Spectre.Console" Version="0.54.0" />
+    <PackageReference Include="Spectre.Console" Version="0.55.0" />
     <PackageReference Include="System.CommandLine" Version="2.0.5" />
   </ItemGroup>
 </Project>
